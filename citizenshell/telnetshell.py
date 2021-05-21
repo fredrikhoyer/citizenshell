@@ -33,7 +33,7 @@ class TelnetShell(AbstractRemoteShell):
         self._read_until("login: ")
         self._write(self._username + "\n")
         if self._password:
-            self._read_until("Password: ")
+            self._read_until("Password:")
             self._write(self._password + "\n")
         sleep(.1)
 
